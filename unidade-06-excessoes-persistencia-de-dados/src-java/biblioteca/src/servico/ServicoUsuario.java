@@ -3,11 +3,19 @@ package servico;
 import modelo.usuario.Usuario;
 import modelo.util.Cpf;
 
+import java.util.Optional;
+
 public class ServicoUsuario {
     private Usuario usuario;
-    public void cadastrarUsuario(String nome, String cpf){
-        usuario = new Usuario(nome, Cpf.getInstance(cpf));
-        //guardar usuário em um mapa, por exemplo
+    public boolean cadastrarUsuario(String nome, String cpf){
+        Optional<Cpf> optCpf = Cpf.getInstance(cpf);
+        if(optCpf.isPresent()){
+            Cpf cpfInstance = optCpf.get();
+            usuario = new Usuario(nome, cpfInstance);
+            //guardar usuário em um mapa, por exemplo
+            return true;
+        }
+        return false;
     }
 
     public Usuario getUsuario() {

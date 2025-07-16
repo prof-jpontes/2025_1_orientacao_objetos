@@ -18,4 +18,9 @@ public class Usuario {
     public Cpf getCpf() {
         return cpf;
     }
+
+    @Override
+    public String toString() {
+        return "Nome: " + this.nome + "\nCPF: " + this.cpf;
+    }
 }
