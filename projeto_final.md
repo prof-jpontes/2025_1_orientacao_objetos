@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Aplicar os conceitos discutidos durante a disciplina de Orientação a Objetos, desenvolvendo em grupo uma aplicação Java completa. O projeto deverá contemplar documentação, modelagem, implementação com persistência de dados e apresentação final.
+Aplicar os conceitos discutidos durante a disciplina de Orientação a Objetos, desenvolvendo em grupo uma aplicação Java completa. O projeto deverá contemplar documentação, modelagem, armazenamento de dados e apresentação final.
 
 ---
 
@@ -34,7 +34,7 @@ Não há um template padrão para este documento, mas o grupo deve apresentar um
 ### 2. Protótipo funcional (código)
 
 - Linguagem: Java
-- Persistência de dados obrigatória
+- Armazenamento: persistência de dados ou simulação de persistência de dados em mapas ou listas.
 - Interface com o usuário: textual (menus interativos) ou visual (Swing, JavaFX) — a qualidade da interface **não é** um item de avaliação 
 - O projeto deve seguir **boas práticas de programação orientada a objetos**, como:
   - Encapsulamento
@@ -51,7 +51,7 @@ projeto/
 aplicacao/ → Classe principal (main)
 modelo/ → Classes de domínio
 servico/ → Regras de negócio (casos de uso)
-persistencia/ → Salvamento e recuperação de dados
+persistencia/ → CRUD real ou simulado
 ui/ → Interface com o usuário (menus ou GUI)
 ```
 Considere ainda a estrutura básica do construtor de projeto (Maven, por exemplo).
